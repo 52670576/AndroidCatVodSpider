@@ -2,10 +2,13 @@ package com.github.catvod.spider;
 
 import android.content.Context;
 import android.text.TextUtils;
+
 import com.github.catvod.api.QuarkApi;
 import com.github.catvod.bean.Result;
 import com.github.catvod.bean.quark.ShareData;
 import com.github.catvod.crawler.Spider;
+import com.github.catvod.crawler.SpiderDebug;
+import com.github.catvod.utils.Notify;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,10 +57,10 @@ public class Quark extends Spider {
         for (int i = 1; i <= ids.size(); i++) {
 
             for (String s : QuarkApi.get().getPlayFormatList()) {
-                playFrom.add(String.format(Locale.getDefault(), "quark" + s + "#%02d%02d", i,index));
+                playFrom.add(String.format(Locale.getDefault(), "quark" + s + "#%02d%02d", i, index));
 
             }
-            playFrom.add("quark原画" + i+index);
+            playFrom.add("quark原画" + i + index);
         }
         return TextUtils.join("$$$", playFrom);
     }
@@ -72,7 +75,11 @@ public class Quark extends Spider {
         List<String> playUrl = new ArrayList<>();
         for (String id : ids) {
             ShareData shareData = QuarkApi.get().getShareData(id);
-            playUrl.add(QuarkApi.get().getVod(shareData).getVodPlayUrl());
+            try {
+                playUrl.add(QuarkApi.get().getVod(shareData).getVodPlayUrl());
+            } catch (Exception e) {
+                SpiderDebug.log("获取播放地址出错:" + e.getMessage());
+            }
         }
         return TextUtils.join("$$$", playUrl);
     }
