@@ -28,3 +28,6 @@ jsSpider 参考 https://github.com/jadehh/TVSpider
 
 ## 备注
 该项目仅为自己自用开发，如果发现bug，可以提issues，但是基本不接受新需求（除非我感兴趣的新需求）。
+
+## 群组
+为了方便讨论可以加群组，但不保证及时回复 https://t.me/+YLvmJsZoFmcyN2M1
