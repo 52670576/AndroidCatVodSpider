@@ -1,5 +1,8 @@
 # CatVodSpider  for TVBOX android 
 
+## 提示
+本项目不提供网盘账号，需要自己登录网盘账号，如果无法使用确保自己的网盘是有空间的，需要高清视频需要自己开通网盘会员，谢谢！！！
+
 ## Based on CatVod
 
 fork from https://github.com/FongMi/CatVodSpider
