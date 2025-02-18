@@ -67,13 +67,66 @@
       "ext": "{\"site\": [\"https://www.wogg.net/\",\"https://wogg.xxooo.cf/\"]}"
     },
     {
-      "key": "木偶",
-      "name": "木偶哥哥",
+      "key": "欧歌",
+      "name": "欧歌|Pan",
       "type": 3,
       "api": "csp_Mogg",
       "searchable": 1,
       "changeable": 1,
       "ext": {}
+    },
+    {
+      "key": "多多影音",
+      "name": "多多影音|Pan",
+      "type": 3,
+      "api": "csp_DuoDuo",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": "{\"site\": [\"https://tv.yydsys.top/\"]}"
+    },
+    {
+      "key": "蜡笔盘盘",
+      "name": "蜡笔盘盘|Pan",
+      "type": 3,
+      "api": "csp_NaBi",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": "{\"site\": [\"https://duopan.fun/\"]}"
+    },
+    {
+      "key": "闪电优汐",
+      "name": "闪电优汐|Pan",
+      "type": 3,
+      "api": "csp_ShanDian",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": "{\"site\": [\"http://1.95.79.193/\"]}"
+    },
+    {
+      "key": "特下饭",
+      "name": "特下饭|Pan",
+      "type": 3,
+      "api": "csp_TeXiaFan",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": "{\"site\": [\"http://www.xn--ghqy10g1w0a.xyz/\",\"http://www.txfyyda.top/\",]}"
+    },
+    {
+      "key": "小米",
+      "name": "小米UC|Pan",
+      "type": 3,
+      "api": "csp_XiaoMi",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": "{\"site\": [\"http://mucpan.cc/\",\"http://milvdou.fun/\"]}"
+    },{
+      "key": "至臻视觉",
+      "name": "至臻视觉|Pan",
+      "type": 3,
+      "api": "csp_ZhiZhen",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": "{\"site\": [\"https://mihdr.top/\"]}"
     },
     {
       "key": "KuaKeBa",
