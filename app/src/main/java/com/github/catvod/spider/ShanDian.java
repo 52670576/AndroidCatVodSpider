@@ -29,7 +29,7 @@ import java.util.regex.Pattern;
 public class ShanDian extends Cloud {
 
     private String siteUrl = "http://1.95.79.193/";
-    private final Pattern regexCategory = Pattern.compile("/vodtype/(\\w+).html");
+    private final Pattern regexCategory = Pattern.compile("index.php/vod/type/id/(\\w+).html");
     private final Pattern regexPageTotal = Pattern.compile("\\$\\(\"\\.mac_total\"\\)\\.text\\('(\\d+)'\\);");
 
     private Map<String, String> getHeader() {

@@ -29,7 +29,7 @@ import java.util.regex.Pattern;
 public class XiaoMi extends Cloud {
 
     private String siteUrl = "https://milvdou.fun/";
-    private final Pattern regexCategory = Pattern.compile("/vodtype/(\\w+).html");
+    private final Pattern regexCategory = Pattern.compile("index.php/vod/type/id/(\\w+).html");
     private final Pattern regexPageTotal = Pattern.compile("\\$\\(\"\\.mac_total\"\\)\\.text\\('(\\d+)'\\);");
 
     private Map<String, String> getHeader() {

@@ -29,7 +29,7 @@ import java.util.regex.Pattern;
 public class TeXiaFan extends Cloud {
 
     private String siteUrl = "http://www.xn--ghqy10g1w0a.xyz/";
-    private final Pattern regexCategory = Pattern.compile("/vodtype/(\\w+).html");
+    private final Pattern regexCategory = Pattern.compile("index.php/vod/type/id/(\\w+).html");
     private final Pattern regexPageTotal = Pattern.compile("\\$\\(\"\\.mac_total\"\\)\\.text\\('(\\d+)'\\);");
 
     private Map<String, String> getHeader() {
