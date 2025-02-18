@@ -52,7 +52,7 @@ public class YunPanZiYuan extends Cloud {
         Elements elements = doc.select("div.row > div.col > div.card  ");
         for (Element e : elements) {
             Elements links = e.select("div.card-footer a");
-            String vodPic = e.selectFirst(" img").attr("src");
+            String vodPic =siteUrl+ e.selectFirst(" img").attr("src");
             String vodName = e.selectFirst("img").attr("alt");
             String vodRemarks = e.selectFirst("p.card-text").text();
             String vodId = "";
@@ -75,7 +75,7 @@ public class YunPanZiYuan extends Cloud {
         Vod item = new Vod();
         item.setVodId(vodId);
         item.setVodName(doc.selectFirst("h5.card-title").text());
-        item.setVodPic(doc.selectFirst("img").attr("src"));
+        item.setVodPic(siteUrl+doc.selectFirst("img").attr("src"));
         item.setVodArea("");
         item.setTypeName(doc.selectFirst("p.card-text > a").text());
         String shareLink = Util.findByRegex("window.open\\('(.*?)'\\)", doc.select("div.card-footer > a").attr("onclick"), 1);
