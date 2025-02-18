@@ -1,5 +1,5 @@
 {
-  "spider": "https://androidcatvodspider.netlify.app/jar/custom_spider.jar;md5;8cfebc2822aa9b34bccab340ac7071ca",
+  "spider": "https://androidcatvodspider.netlify.app/jar/custom_spider.jar;md5;1ad213d7330c5c4cd5a58de97c709b52",
   "lives": [
 
     {
@@ -22,7 +22,7 @@
       "name": "直播",
       "type": "0",
       "pass": true,
-      "url": "https://ghp.ci/https://raw.githubusercontent.com/zwc456baby/iptv_alive/master/live.txt",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/Wirili/IPTV/main/live.txt",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
@@ -155,7 +155,15 @@
       "changeable": 1,
       "ext": {}
     },
-
+    {
+      "key": "云盘资源网",
+      "name": "云盘资源网",
+      "type": 3,
+      "api": "csp_YunPanZiYuan",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": ""
+    },
     {
       "key": "XuanFeng",
       "name": "旋风影视",
